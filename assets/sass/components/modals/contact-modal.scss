@@ -1,0 +1,61 @@
+#contactModal{
+	z-index: 9999;
+	.modal-dialog{
+		width: 101%;
+		margin:0px;
+
+		.modal-content{
+			border-radius:0px 0px 0px 0px;
+			background: #3498db;
+			color: #fff;
+			font-family: "Lato";
+
+			.modal-header{
+				.modal-title{
+					text-transform:uppercase;
+					letter-spacing: 2px;
+				}
+			}
+
+			.modal-body{
+				min-height: 550px;
+				padding:5rem;
+
+				.contact-persons__row{
+					.person-data{
+						padding:1rem;
+
+						.contact-person__title,
+						.contact-person__name,
+						.contact-person__phone,
+						.contact-person__email{
+							margin-top:2rem;
+							margin-bottom:2rem;
+
+							a{
+								color: #fff;
+
+								&:hover{
+									color: #2ecc71;
+									transition:ease-in-out 0.2s all;
+								}
+
+								&:not(:hover){
+									transition:ease-in-out 0.2s all;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.modal-footer{
+				button.btn{
+					color: #fff;
+					background: transparent;
+					border-radius: 0px 0px 0px 0px;
+				}
+			}
+		}
+	}
+}

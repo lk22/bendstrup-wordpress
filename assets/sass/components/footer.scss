@@ -1,0 +1,31 @@
+#footer{
+	height:40px;
+	width: 100%;
+	padding-left:0px;
+	padding-right:0px;
+	background:#000;
+	color: #fff;
+	font-family: "lato";
+
+	a{
+		color: #fff;
+		text-decoration: none;
+
+		&:hover{
+			color: #3b5998;
+			transition:ease-in-out 0.2s all;
+		}
+
+		&:not(:hover){
+			transition: ease-in-out 0.2s all;
+		}
+	}
+
+	@media screen and(max-width: 400px){
+		height:auto;
+	}
+
+	@media screen and (min-width: 401px) and (max-width: 991px){
+		height: auto;
+	}
+}

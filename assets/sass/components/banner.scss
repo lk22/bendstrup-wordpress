@@ -1,0 +1,186 @@
+body{ overflow-x: hidden; background: #ecf0f1;}
+
+@import '../animations/changeCover';
+
+.banner-container{
+	margin-top:-50px;
+	animation: welcomeScreen 10s;
+	min-height: 250px;
+	background-image: url(http://www.bendstrup-camping.dk/Billeder/image4131.jpg);
+	background-size:cover;
+	width: 100%;
+	padding-right:0px;
+	padding-left: 0px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition:ease-in-out 0.2s all;
+	font-family: "Lato";
+
+	@media screen and(max-width: 400px) {
+		height: 350px;
+		animation: changeCover 40s;
+		animation-iteration-count: infinite;
+		background-size: cover;
+		width: 100%;
+	}
+
+	@media screen and (min-width: 401px) and (max-width: 991px){
+		animation: changeCover 40s;
+		animation-iteration-count: infinite;
+		background-size: cover;
+		width: 100%;
+	}
+
+	// overlay
+	.overlay{
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		height: 200px;
+		width: 100%;
+		background: #134E5E;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		margin: 0 auto;
+		opacity: 0.5;
+		z-index:1;
+
+		@media screen and(max-width: 400px){
+			height: 345.5px;
+			width: 100%;
+			margin: 0;
+		}
+
+		@media screen and(min-width: 401px) and (max-width: 424px) {
+			height:246px;
+		}
+
+		@media screen and(min-width: 425px) and (max-width: 783px){
+			height:246px;
+		}
+
+		@media screen and(min-width: 401px) and (max-width: 991px) {
+			margin: 0;
+			width: 100%;
+		}
+	}
+
+	// top layer above the overlay
+	.overlay-top{
+		position: absolute;
+		top:0px;
+		bottom: 0px;
+		right: 0px;
+		left: 0px;
+		height:200px;
+		width: 100%;
+		z-index:9999;
+		margin: 0px auto;
+
+		@media screen and(max-width: 400px){
+			height: 300px;
+			margin:0;
+		}
+
+		@media screen and(min-width: 401px) and (max-width: 991px) {
+			margin: 0;
+			width: 100%;
+		}
+
+		// rows
+		.banner-container__row{
+			padding-top:2rem;
+
+			@media screen and (max-width: 400px) {
+				padding-top:3.5rem;
+			}
+
+			.menu-icon{
+				padding-left:2.5rem;
+				cursor:pointer;
+			}
+
+			.andelsforeningen{
+				font-size: 20px;
+			}
+
+			// headings
+			.banner-container__heading{
+
+				@media screen and(max-width: 400px){
+					font-size: 13px;
+				}
+
+				@media screen and (min-width: 401px) and (max-width: 991px){
+					font-size:15px;
+				}
+
+				// see map span
+				.see-map{
+
+					// link to the map
+					a{
+						color: #fff;
+						text-decoration:none;
+
+						&:hover{
+							color: #fff;
+							transition: ease-in-out 0.2s all;
+						}
+
+						&:not(:hover){
+							transition: ease-in-out 0.2s all;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// banner menu container
+.banner-container__menu{
+	min-height: 60px;
+	padding-right: 0px;
+	padding-left: 0px;
+	background: #000;
+	margin: 0 auto;
+
+	.menu-primary-menu-link-container{
+		margin: 0 auto;
+
+		//menu
+		.menu, .modal-links{
+			padding: 2rem;
+			margin: 0 auto;
+			display:flex;
+			justify-content: center;
+
+			// menu items
+			.menu-item{
+				display: inline;
+				margin-left: 3rem;
+
+				// link to the menu item
+				a{
+					color: #fff;
+					text-transform: uppercase;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	// mobile devices
+	@media screen and (max-width: 400px) {
+		display:none;
+	}
+
+	// tablet devices
+	@media screen and (min-width: 401px) and (max-width: 991px) {
+		display:none;
+	}
+}

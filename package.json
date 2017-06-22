@@ -1,0 +1,16 @@
+{
+  "name": "bendstrup-wp",
+  "version": "1.0.0",
+  "description": "Bendstrup camping wordpress theme project",
+  "main": "index.js",
+  "repository": {},
+  "author": "Leo Knudsen",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "jquery": "^3.2.1",
+    "laravel-elixir": "^6.0.0-15",
+    "sass-lint": "^1.10.2"
+  }
+}

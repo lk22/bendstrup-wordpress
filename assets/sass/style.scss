@@ -1,0 +1,81 @@
+/**
+ * Theme Name: Bendstrup Camping
+ * Author: Leo Knudsen
+ * Author URI:
+ * Version: 1.0
+ */
+
+ // fonts
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+// components
+@import './components/_all';
+
+// page content section
+.content-section{
+	min-height: 500px;
+	width: 100%;
+	padding-right:0px;
+	padding-left:0px;
+	background: #ecf0f1;
+
+	@import './components/sidebar';
+
+	// page-content
+	#page-content{
+		min-height: 800px;
+		min-width: auto;
+		padding:3rem;
+		font-family: "Lato";
+		// display:none;
+		// font-size:18px;
+
+		.home-section, .pictures-section, .contact-info-section, .Aktiviteter-section, .Oplysninger-section, .Sale-section, .Campisterne-section{
+			min-height:150px;
+			background:#fff;
+			padding:3rem;
+			border: 1px solid #bdc3c7;
+			border-radius: 5px 5px 5px 5px;
+			width: 105%;
+
+            .panel-layout .panel-grid .panel-grid-cell .widget{
+                padding:2rem;
+            }
+		}
+
+        // contact information section => ./sections/contact-section.scss
+		@import './sections/contact-section';
+
+        // picture section => ./sections/picture-section.scss
+        @import './sections/picture-section';
+
+        // activities section => ./sections/activities-section.scss
+        @import './sections/activities-section';
+
+		@media screen and(max-width: 400px){
+			width: 95%;
+			margin:1rem;
+			padding:3rem;
+			text-align:center;
+		}
+
+		@media screen and (min-width: 401px) and (max-width: 991px){
+			width: 94%;
+			margin:1rem;
+			padding:3rem;
+			text-align:center;
+		}
+	}
+
+    @import './components/mobile-menu';
+}
+
+.hidden{
+	transition:ease-in-out 0.2s all;
+	display:none;
+}
+
+.shown{
+	transition:ease-in-out 0.2s all;
+	display:block;
+}

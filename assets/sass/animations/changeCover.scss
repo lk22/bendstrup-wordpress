@@ -1,0 +1,18 @@
+// change background cover animation
+@keyframes changeCover{
+	0%{
+		background-image: url(http://www.bendstrup-camping.dk/Billeder/image4131.jpg);
+	}
+	25%{
+		background-image: url(http://hilleroed.lokalavisen.dk/storyimage/PL/20100807/artikler/708069847/AR/0/AR-708069847.jpg&MaxW=620&MaxH=413&Q=100&IsoModifiedDate=20100807060000);
+	}
+	50%{
+		background-image: url(../../assets/images/image3911.jpg);
+	}
+	75%{
+		background-image: url(../../assets/images/image551.jpg);
+	}
+	100%{
+		background-image: url(http://www.bendstrup-camping.dk/Billeder/image4131.jpg);
+	}
+}

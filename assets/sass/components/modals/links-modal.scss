@@ -1,0 +1,47 @@
+#linksModal{
+	z-index: 9999;
+	.modal-dialog{
+		width: 101%;
+		margin:0px;
+
+		.modal-content{
+			border-radius:0px 0px 0px 0px;
+			background: #3498db;
+			color: #fff;
+			font-family: "Lato";
+
+			.modal-header{
+				.modal-title{
+					text-transform:uppercase;
+					letter-spacing: 2px;
+				}
+			}
+
+			.modal-body{
+				min-height: 550px;
+				padding:5rem;
+
+				.external-links-list{
+					.list-item{
+						list-style-type:none;
+						padding-bottom: 1rem;
+						padding-top: 1rem;
+						border-bottom: 1px solid #ecf0f1;
+						a{
+							font-size:20px;
+							color: #fff;
+						}
+					}
+				}
+			}
+
+			.modal-footer{
+				button.btn{
+					color: #fff;
+					background: transparent;
+					border-radius: 0px 0px 0px 0px;
+				}
+			}
+		}
+	}
+}

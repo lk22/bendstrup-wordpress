@@ -1,0 +1,28 @@
+.pictures-section{
+    margin-top:0rem;
+
+    .image-container{
+        padding:1.5rem;
+
+        @media screen and(max-width: 400px){
+            padding:6rem;
+        }
+
+        @media screen and(min-width: 401px) and (max-width: 767px){
+            width: 30%;
+            padding:5rem;
+            a > img{
+                height:100px;
+                width: 100px;
+            }
+        }
+
+        @media screen and (min-width: 401px) and (max-width: 991px){
+            padding:0rem;
+            a > img{
+                height:200px;
+                width:200px;
+            }
+        }
+    }
+}
