@@ -59,18 +59,6 @@ function page_title(){
       return $post->post_title;
 }
 
-/**
- * require partial component for a specific path
- *
- * @param [type] $folder
- * @param [type] $partial
- * @return void
- */
-function get_bendstrup_partial($root = './', $path, $partial){
-      if(isset($root)) {
-            require($root . $path . '/' . $partial . '.php');
-      }
-}
 
 /**
  * dumping debugging data to screen
@@ -80,12 +68,3 @@ function debug($data){
       var_dump($data);
       echo "</pre>";
 }
-
-/**
- * fetching the template if used
- * */
- function get_bendstrup_template($template){
-       if(is_page_template($template)) {
-             require_once($template . '.php');
-       }
- }

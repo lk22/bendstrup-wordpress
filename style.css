@@ -6,8 +6,8 @@
  */
 @import url("https://fonts.googleapis.com/css?family=Lato");
 body {
-  overflow-x: hidden;
   background: #ecf0f1;
+  overflow-x: hidden;
 }
 
 @-webkit-keyframes changeCover {

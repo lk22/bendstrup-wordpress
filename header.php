@@ -21,4 +21,4 @@
 <body <?php body_class() ?>>
 
       <!-- banner component => components/banner.php-->
-      <?php get_bendstrup_partial(null, 'components', 'banner'); ?>
+      <?php require('components/banner.php'); ?>

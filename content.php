@@ -44,5 +44,5 @@
              ?>
         </section>
 
-       <?php get_bendstrup_partial(null, 'components', 'mobile-menu'); ?>
+       <?php require('components/mobile-menu.php'); ?>
     </section>
